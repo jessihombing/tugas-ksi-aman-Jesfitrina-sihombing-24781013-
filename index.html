@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versi Aman - Tugas KSI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Versi Aman (Secure)</h1>
+        <p>Masukkan API Key Anda (disimpan di sessionStorage):</p>
+        <input type="password" id="apiKeyInput" placeholder="Masukkan API Key Gemini..." />
+        
+        <p>Masukkan Prompt Anda (Maksimal 200 karakter):</p>
+        <textarea id="promptInput" rows="4" maxlength="200" placeholder="Tanyakan sesuatu..."></textarea>
+        <small id="warningMsg" style="color: red; display: none;">Peringatan: Prompt mengandung kata terlarang!</small>
+        
+        <button id="submitBtn">Kirim ke AI (Mode Aman)</button>
+        <h3>Hasil (Output):</h3>
+        <div id="outputArea"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
